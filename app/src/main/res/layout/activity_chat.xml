@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".UI.ChatActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:tint="@color/white"
+            android:src="@drawable/icon_back"/>
+
+        <TextView
+            android:id="@+id/PhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/mcvEnterMessage"
+        android:layout_below="@id/topBar"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="10dp"
+     />
+
+
+    <com.google.android.material.card.MaterialCardView
+       android:id="@+id/mcvEnterMessage"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_margin="10dp"
+       app:strokeWidth="0dp"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/etMessage"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:maxLines="2"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="50dp"
+           android:hint="Enter Message"
+           android:padding="15dp"
+           android:background="@null"/>
+
+   </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/ivmic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ivSendMessage"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        app:tint="@color/primary"
+        android:src="@drawable/icon_mic"/>
+
+    <ImageView
+        android:id="@+id/ivSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="25dp"
+        app:tint="@color/primary"
+        android:src="@drawable/icon_send"/>
+
+    <ImageView
+        android:id="@+id/ivSendImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="22dp"
+        app:tint="@color/off_white"
+        android:src="@drawable/icon_image"/>
+
+
+</RelativeLayout>

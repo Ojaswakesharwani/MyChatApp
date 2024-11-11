@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "421214730660",
+    "project_id": "mychatapp-187d3",
+    "storage_bucket": "mychatapp-187d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421214730660:android:68dd665262777e953ee931",
+        "android_client_info": {
+          "package_name": "com.placementadda.mychatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyDp40tKzTt2nv1HfmXDHHclnXy0_qmnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
